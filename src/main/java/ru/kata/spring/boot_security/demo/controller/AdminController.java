@@ -65,7 +65,7 @@ public class AdminController {
         }
         return "redirect:/admin";
     }
-    @PostMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable(name = "id") Long id, @ModelAttribute("user") @Valid User user, String role, BindingResult bindingResult) {
         try {
             if (bindingResult.hasErrors()) {

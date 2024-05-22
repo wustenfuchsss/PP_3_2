@@ -150,7 +150,7 @@
                                                 th:attr="data-target='#deleteUserModal-'+${user.id}">Delete
                                         </button>
                                         <form th:action="@{/delete/{id}(id=${user.id})}"
-                                              th:method="post">
+                                              th:method="delete">
                                             <div class="modal fade" th:id="'deleteUserModal-'+${user.id}" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
